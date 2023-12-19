@@ -374,7 +374,7 @@
     .platforms__selects{
        display: flex;
        flex-direction: column;
-       gap: 5px;
+       /* gap: 5px; */
     }
     .platforms__select, .platforms__btn{
         height: 55px;
@@ -629,9 +629,9 @@
     .selection__text{
         font-size: 14px;
     }
-    .top__form.dropdown-btn, .form__select-input{
+    /* .top__form.dropdown-btn, .form__select-input{
         font-size: 14px;
-    }
+    } */
 
     .top__btn{
         font-size: 18px;

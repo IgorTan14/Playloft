@@ -310,6 +310,21 @@ $('.see-more__inner').slick({
       breakpoint: 600,
       settings: "unslick"
     },
+    //   {
+    //   breakpoint: 600,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     centerMode: false,
+    //     dots: false,
+    //     infinite: false,
+    //     arrows: true,
+    //   }
+    // },
+    //  {
+    //   breakpoint: 4890,
+    //   settings: "unslick"
+    // },
     {
       breakpoint: 1300,
       settings: "unslick"
@@ -351,34 +366,25 @@ $('.platforms-more').on('click', function(){
 
 
 
+function readMore() {
+  var dots = document.getElementById("dots");
+  var btn = document.getElementById("btn");
+  var more = document.getElementById("more");
+
+  if(dots.style.display === "none"){
+     dots.style.display="inline";
+     btn.innerHTML="подивитись все";
+     more.style.display="none"; 
+  } else {
+     dots.style.display="none";
+     btn.innerHTML="приховати";
+     more.style.display="inline";
+  }
+}
 
 
 
 
-
-
-
-// $(document).ready(function(){
-//   let settingsSlick = {
-//           dots: false,
-//           arrows: false,
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           centerMode: true,
-//           infinite: true,
-//       }
-
-//   if (document.documentElement.clientWidth < 560) {
-//       $('.card__parameters').slick(settingsSlick);
-//   } 
-//   window.onresize = function() {
-//     if (document.documentElement.clientWidth < 560) {
-//         if(!$(".card__parameters").hasClass("slick-initialized")) $('.card__parameters').slick(settingsSlick);
-//     } else {
-//         if ($(".card__parameters").hasClass("slick-initialized")) $(".card__parameters").slick("unslick");
-//     }
-// }
-// });
 
 $('.card__parameters').slick({
   slidesToShow: 4,
